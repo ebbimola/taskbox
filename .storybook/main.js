@@ -4,6 +4,7 @@ const config = {
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)",
     "../src/components/**/*.stories.@(js|jsx)",
+    "../src/3ripple/**/*.stories.@(js|jsx)",
   ],
   staticDirs: ["../public"],
   addons: [
