@@ -7,7 +7,7 @@ const ActionsData = {
 
 export default {
   component: Tree,
-  title: "3ripple/Tree",
+  title: "Menu/Tree",
   tags: ["autodocs"],
   parameters: {},
   args: {
@@ -15,20 +15,9 @@ export default {
   },
 };
 
-// export const MenuStory = () => <Tree />;
-
-// export const Menu3ripple = {
-//   parameters: {
-//     design: {
-//       type: "figma",
-//       url: "https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-File",
-//     },
-//   },
-// };
-
 export const Default = {
   args: {
-    logoSrc: "public/logo3.png",
+    logoSrc: "src/assets/Logo3.png",
     logoAlt: "Logo Alt Text",
     links: [
       { href: "#home", text: "Home" },
@@ -41,7 +30,7 @@ export const Default = {
 
 export const WithManyLinks = {
   args: {
-    logoSrc: "public/logo3.png",
+    logoSrc: "src/assets/logo3.png",
     logoAlt: "Logo Alt Text",
     links: [
       { href: "#home", text: "Home" },
@@ -58,7 +47,7 @@ export const WithManyLinks = {
 
 export const NoLinks = {
   args: {
-    logoSrc: "public/logo3.png",
+    logoSrc: "src/assets/logo3.png",
     logoAlt: "Logo Alt Text",
     links: [],
   },
@@ -66,7 +55,7 @@ export const NoLinks = {
 
 export const CustomStyles = {
   args: {
-    logoSrc: "public/logo3.png",
+    logoSrc: "src/assets/logo3.png",
     logoAlt: "Logo Alt Text",
     links: [
       { href: "#home", text: "Home" },

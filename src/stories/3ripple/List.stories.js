@@ -7,7 +7,7 @@ const ActionsData = {
 
 export default {
   component: List,
-  title: "3ripple/List",
+  title: "List/List",
   tags: ["autodocs"],
   parameters: {},
   args: {
