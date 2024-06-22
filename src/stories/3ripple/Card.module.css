@@ -1,0 +1,51 @@
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;  
+    height: 100%;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.card_icon {
+    margin-bottom: 8px;
+    color: black
+}
+
+.card_title {
+    font-size: 16px;
+    font-weight: 500;
+    color: blue
+}
+
+.card_body {
+   flex-grow: 1;
+   margin-bottom: 8px;
+}
+
+.card_link-container {
+    display: inline;
+}
+
+.card_link-container a {
+    display: block;
+    color: #2874f0;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.card_link-container a:focus-visible {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #2874f0;
+}
+
+.card_link-container a::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    cursor: pointer;
+}

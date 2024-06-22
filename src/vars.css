@@ -1,0 +1,15 @@
+/* Figma Styles of your File */:root {
+  /* Colors */
+  --blue-gray-gradient: linear-gradient(180deg, rgba(0, 111, 245, 0.80) 0%,rgba(121, 135, 151, 0.80) 100%);
+
+  /* Fonts */
+  --text-font-family: Inter-Regular, sans-serif;
+  --text-font-size: 12px;
+  --text-line-height: normal;
+  --text-font-weight: 400;
+  --text-font-style: normal;
+
+  /* Effects */
+
+}
+

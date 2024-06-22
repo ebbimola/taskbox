@@ -19,6 +19,7 @@ export const Default = {
   args: {
     logoSrc: "src/assets/Logo3.png",
     logoAlt: "Logo Alt Text",
+    logoWidth: "100px",
     links: [
       { href: "#home", text: "Home" },
       { href: "#about", text: "About" },
@@ -32,6 +33,7 @@ export const WithManyLinks = {
   args: {
     logoSrc: "src/assets/logo3.png",
     logoAlt: "Logo Alt Text",
+    logoWidth: "100px",
     links: [
       { href: "#home", text: "Home" },
       { href: "#about", text: "About" },
@@ -49,6 +51,7 @@ export const NoLinks = {
   args: {
     logoSrc: "src/assets/logo3.png",
     logoAlt: "Logo Alt Text",
+    logoWidth: "100px",
     links: [],
   },
 };
@@ -57,6 +60,7 @@ export const CustomStyles = {
   args: {
     logoSrc: "src/assets/logo3.png",
     logoAlt: "Logo Alt Text",
+    logoWidth: "100px",
     links: [
       { href: "#home", text: "Home" },
       { href: "#about", text: "About" },

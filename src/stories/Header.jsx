@@ -11,6 +11,7 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
       <Tree
         logoSrc="src/assets/Logo3.png"
         logoAlt="Logo Alt Text"
+        logoWidth={100}
         links={[
           { href: "#home", text: "Home" },
           { href: "#about", text: "About" },
