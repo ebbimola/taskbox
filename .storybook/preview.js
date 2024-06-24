@@ -17,7 +17,9 @@ export const preview = {
       },
     },
   },
+
   loaders: [mswLoader],
+  tags: ["autodocs"]
 };
 export const decorators = [
   withThemeByClassName({

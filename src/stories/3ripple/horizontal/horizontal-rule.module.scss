@@ -1,0 +1,26 @@
+.horizontal-rule {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+  
+    &--margin-none {
+      margin: 0;
+    }
+  
+    &--margin-xs {
+      margin: 4px 0;
+    }
+  
+    &--margin-sm {
+      margin: 8px 0;
+    }
+  
+    &--margin-md {
+      margin: 16px 0;
+    }
+  
+    &--margin-lg {
+      margin: 32px 0;
+    }
+  }
+  

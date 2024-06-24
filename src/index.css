@@ -464,3 +464,19 @@ textarea {
   vertical-align: top;
   max-width: 100%;
 }
+
+.host{
+  --padding-xs:4px;
+  --padding-s:8px;
+  --padding-m:16px;
+  --padding-l:24px; 
+  --padding-xl:32px;
+  --space-between-s:8px;
+  --space-between-m:16px;
+  --space-between-l:32px;
+  --border-radius-xs:2px;
+  --border-radius-s:4px;
+  --border-radius-m:8px;
+  --border-radius-l:16px;
+  --border-radius-xl:24px;
+}

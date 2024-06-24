@@ -2,7 +2,7 @@
 import PropTypes from "prop-types";
 
 import { Button } from "./Button";
-import { Tree } from "../stories/3ripple/Menu";
+import { Tree } from "../stories/3ripple/menu/Menu";
 import "./header.css";
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
