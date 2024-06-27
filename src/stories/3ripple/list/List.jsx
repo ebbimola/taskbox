@@ -1,74 +1,46 @@
-// import React from "react";
-import "./list.css";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+import clsx from 'clsx';
 
-export const List = ({ steps, size, showIcons, showLinks }) => {
-  return (
-    <div className="container">
-      {steps.map((step, index) => (
-        <div
-          key={index}
-          className="step"
-          style={{ borderColor: step.color, ...getSizeStyles(size) }}
-        >
-          {showIcons && step.icon && (
-            <img src={step.icon} alt={`${step.name} icon`} className="icon" />
-          )}
-          <div className="textContainer">
-            <div className="title">{step.name}</div>
-            {showLinks && step.links && (
-              <div className="links">
-                {step.links.map((link, i) => (
-                  <a key={i} href={link.url} className="link">
-                    {link.text}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-};
+import styles from './list.module.scss';
+
+export const List = ({
+  as: Component = 'ul',
+  className,
+  children,
+  noMarker,
+  footer,
+  noMargin,
+  ...props
+}) => (
+  <Component
+    className={clsx({
+      [styles['list']]: true,
+      [styles['list--ul']]: Component === 'ul',
+      [styles['list--ol']]: Component === 'ol',
+      [styles['list--no-marker']]: noMarker,
+      [styles['list--footer']]: footer,
+      [styles['list--no-margin']]: noMargin,
+    }, className)}
+    {...props}
+  >
+    {children}
+  </Component>
+);
 
 List.propTypes = {
-  steps: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      color: PropTypes.string.isRequired,
-      icon: PropTypes.string,
-      links: PropTypes.arrayOf(
-        PropTypes.shape({
-          url: PropTypes.string.isRequired,
-          text: PropTypes.string.isRequired,
-        })
-      ),
-    })
-  ),
-  size: PropTypes.oneOf(["small", "medium", "large"]),
-  showIcons: PropTypes.bool,
-  showLinks: PropTypes.bool,
+  as: PropTypes.oneOf(['ul', 'ol']),
+  children: PropTypes.node.isRequired,
+  noMarker: PropTypes.bool,
+  footer: PropTypes.bool,
+  noMargin: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 List.defaultProps = {
-  steps: [],
-  size: "medium",
-  showIcons: true,
-  showLinks: true,
-};
-
-const getSizeStyles = (size) => {
-  switch (size) {
-    case "small":
-      return { padding: "10px 20px", fontSize: "14px", width: "200px" };
-    case "large":
-      return { padding: "30px 40px", fontSize: "40px", width: "600px" };
-    default:
-      return {
-        padding: "20px 30px",
-        fontSize: "20px",
-        width: "400px",
-      };
-  }
+  as: 'ul',
+  noMarker: false,
+  footer: true,
+  noMargin: false,
+  className: '',
 };

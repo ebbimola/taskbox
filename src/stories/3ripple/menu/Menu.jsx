@@ -22,7 +22,7 @@ export const Tree = ({ logoSrc, logoAlt, logoWidth, links }) => {
         ))}
       </div>
       <div
-        className={`${"burger-menu"} ${menuOpen ? "change" : ""}`}
+        className={`burger-menu ${menuOpen ? "change" : ""}`}
         onClick={toggleMenu}
       >
         <div className="bar1"></div>
@@ -30,7 +30,7 @@ export const Tree = ({ logoSrc, logoAlt, logoWidth, links }) => {
         <div className="bar3"></div>
       </div>
       {menuOpen && (
-        <div className="nav-links-mobile">
+        <div className="sidebar">
           {links.map((link, index) => (
             <a key={index} href={link.href}>
               {link.text}

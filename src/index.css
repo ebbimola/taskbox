@@ -1,13 +1,20 @@
-@tailwind base;
+/* @tailwind base;
 
 @tailwind components;
 
-@tailwind utilities;
+@tailwind utilities; */
       
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+  --color-primary-fg: #ffffff;
+  --padding-l:24px;
+  --padding-xs:4px;
+  --padding-s:8px;
+  --padding-m:16px;
+  --footer-gutter:16px;
+  --footer-gap:16px;
 }
 
 html,

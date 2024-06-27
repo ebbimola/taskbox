@@ -24,7 +24,7 @@ export const Default = {
       ["Title", "Project 5", "Project 6", "Project 7", "Project 8"],
       ["Title", "Project 9", "Project 10", "Project 11", "Project 12"],
     ],
-    socialIcons: ["vector0.svg", "vector1.svg", "fill-logos-twitter-fill0.svg"],
+    socialIcons: ["instagram.svg", "facebook.svg", "twitter.svg"],
     policies: [
       { text: "About 3ripple", className: "about-3-ripple" },
       { text: "Privacy Policy", className: "privacy-policy" },
@@ -37,13 +37,14 @@ export const Default = {
 export const CustomClassName = {
   args: {
     className: "custom-class",
+    logosrc: "public/SingleLogo.svg",
     links: [
       [
-        "Custom Title",
-        "Custom Project 1",
-        "Custom Project 2",
-        "Custom Project 3",
-        "Custom Project 4",
+        "Title",
+        "Project 1",
+        "Project 2",
+        "Project 3",
+        "Project 4",
       ],
       [
         "Custom Title",
@@ -53,24 +54,24 @@ export const CustomClassName = {
         "Custom Project 8",
       ],
       [
-        "Custom Title",
-        "Custom Project 9",
-        "Custom Project 10",
-        "Custom Project 11",
-        "Custom Project 12",
+        "Title",
+        "Project 9",
+        "Project 10",
+        "Project 11",
+        "Project 12",
       ],
     ],
     socialIcons: [
-      "custom-vector0.svg",
-      "custom-vector1.svg",
-      "custom-fill-logos-twitter-fill0.svg",
+      "instagram.svg",
+      "facebook.svg",
+      "twitter.svg",
     ],
     policies: [
-      { text: "Custom About 3ripple", className: "about-3-ripple" },
-      { text: "Custom Privacy Policy", className: "privacy-policy" },
-      { text: "Custom Cookie Policy", className: "cookie-policy" },
+      { text: "About 3ripple", className: "about-3-ripple" },
+      { text: "Privacy Policy", className: "privacy-policy" },
+      { text: "Cookie Policy", className: "cookie-policy" },
       {
-        text: "Custom Terms and Conditions",
+        text: "Terms and Conditions",
         className: "terms-and-conditions",
       },
     ],
