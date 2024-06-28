@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SingleLogo } from "./3rippleLogo";
+import { SingleLogo } from "./logo/logo";
 import "./MainFooter.css";
 
 export const ThreeRippleFooter = ({
@@ -15,7 +15,7 @@ export const ThreeRippleFooter = ({
     <div className={"_3-ripple-footer " + className} {...props}>
       <div className="_3-ripple-footer-sub">
         <div className="third-level-footer-frame">
-          <SingleLogo src={logosrc} className="single-logo-instance" />
+          <SingleLogo logoSrc={logosrc} className="single-logo-instance" />
           <div className="list-frame">
             {links.map((linkGroup, index) => (
               <div key={index} className={`list-${index + 1}`}>
@@ -48,7 +48,7 @@ export const ThreeRippleFooter = ({
             ))}
           </div>
           <div className="copyright">
-            <div className="_2024">2024 </div>
+            <div className="_2024"> &copy; {new Date().getFullYear()} </div>
             <div className="_3-ripple-states-limited">
               3ripple States Limited{" "}
             </div>

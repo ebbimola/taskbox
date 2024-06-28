@@ -1,4 +1,4 @@
-import { SingleLogo } from "./3rippleLogo.jsx";
+import { SingleLogo } from "./logo/logo.jsx";
 import PropTypes from "prop-types";
 
 export const ThreeRippleMobileFooter = ({

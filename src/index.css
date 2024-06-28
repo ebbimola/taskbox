@@ -1,13 +1,20 @@
-@tailwind base;
+/* @tailwind base;
 
 @tailwind components;
 
-@tailwind utilities;
+@tailwind utilities; */
       
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+  --color-primary-fg: #ffffff;
+  --padding-l:24px;
+  --padding-xs:4px;
+  --padding-s:8px;
+  --padding-m:16px;
+  --footer-gutter:16px;
+  --footer-gap:16px;
 }
 
 html,
@@ -463,4 +470,20 @@ textarea {
   display: inline-block;
   vertical-align: top;
   max-width: 100%;
+}
+
+.host{
+  --padding-xs:4px;
+  --padding-s:8px;
+  --padding-m:16px;
+  --padding-l:24px; 
+  --padding-xl:32px;
+  --space-between-s:8px;
+  --space-between-m:16px;
+  --space-between-l:32px;
+  --border-radius-xs:2px;
+  --border-radius-s:4px;
+  --border-radius-m:8px;
+  --border-radius-l:16px;
+  --border-radius-xl:24px;
 }

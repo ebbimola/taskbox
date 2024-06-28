@@ -9,7 +9,7 @@ export default {
   component: Tree,
   title: "Menu/Tree",
   tags: ["autodocs"],
-  parameters: {},
+  // parameters: {layout: "centered"},
   args: {
     ...ActionsData,
   },

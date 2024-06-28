@@ -1,13 +1,13 @@
 import { fn } from "@storybook/test";
-import { List } from "./List";
+import { cList } from "./List-card";
 
 const ActionsData = {
   onclick: fn(),
 };
 
 export default {
-  component: List,
-  title: "List/List",
+  component: cList,
+  title: "List/cList",
   tags: ["autodocs"],
   parameters: {},
   args: {

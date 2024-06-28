@@ -1,0 +1,127 @@
+.text {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  &--align-center {
+    text-align: center;
+  }
+
+  &--align-center-sm {
+    @media (max-width: 600px) {
+      text-align: center;
+    }
+  }
+
+  &--style-italic {
+    font-style: italic;
+  }
+
+  &--color-default {
+    color: #000;
+  }
+
+  &--color-inherit {
+    color: inherit;
+  }
+
+  &--color-success {
+    color: green;
+  }
+
+  &--color-error {
+    color: red;
+  }
+
+  &--color-warning {
+    color: orange;
+  }
+
+  &--color-info {
+    color: blue;
+  }
+
+  &--color-light {
+    color: #f5f5f5;
+  }
+
+  &--color-dark {
+    color: #333;
+  }
+
+  &--transform-uppercase {
+    text-transform: uppercase;
+  }
+
+  &--transform-lowercase {
+    text-transform: lowercase;
+  }
+
+  &--transform-capitalize {
+    text-transform: capitalize;
+  }
+
+  &--decoration-underline {
+    text-decoration: underline;
+  }
+
+  &--decoration-strikethrough {
+    text-decoration: line-through;
+  }
+
+  &--size-T200 {
+    font-size: 12px;
+  }
+
+  &--size-T300 {
+    font-size: 14px;
+  }
+
+  &--size-T400 {
+    font-size: 16px;
+  }
+
+  &--size-T500 {
+    font-size: 18px;
+  }
+
+  &--size-T600 {
+    font-size: 20px;
+  }
+
+  &--size-T700 {
+    font-size: 24px;
+  }
+
+  &--size-T800 {
+    font-size: 28px;
+  }
+
+  &--size-T900 {
+    font-size: 32px;
+  }
+
+  &--weight-light {
+    font-weight: 300;
+  }
+
+  &--weight-regular {
+    font-weight: 400;
+  }
+
+  &--weight-medium {
+    font-weight: 500;
+  }
+
+  &--weight-bold {
+    font-weight: 700;
+  }
+
+  &--weight-heavy {
+    font-weight: 900;
+  }
+
+  &--margin-bottom {
+    margin-bottom: 16px;
+  }
+}

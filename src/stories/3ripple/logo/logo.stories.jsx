@@ -1,4 +1,4 @@
-import { SingleLogo } from "./3rippleLogo";
+import { SingleLogo } from "./logo";
 
 export default {
   title: "Logo/3rippleLogo",

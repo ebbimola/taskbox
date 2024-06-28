@@ -1,8 +1,8 @@
 // import React from "react";
-import "./list.css";
+import "./list-card.css";
 import PropTypes from "prop-types";
 
-export const List = ({ steps, size, showIcons, showLinks }) => {
+export const cList = ({ steps, size, showIcons, showLinks }) => {
   return (
     <div className="container">
       {steps.map((step, index) => (
@@ -32,7 +32,7 @@ export const List = ({ steps, size, showIcons, showLinks }) => {
   );
 };
 
-List.propTypes = {
+cList.propTypes = {
   steps: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -51,7 +51,7 @@ List.propTypes = {
   showLinks: PropTypes.bool,
 };
 
-List.defaultProps = {
+cList.defaultProps = {
   steps: [],
   size: "medium",
   showIcons: true,
